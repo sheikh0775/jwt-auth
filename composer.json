@@ -1,6 +1,6 @@
 {
     "name": "sheikh0775/jwt-auth",
-    "description": "JSON Web Token Authentication for Laravel and Lumen",
+    "description": "JSON Web Token Authentication for Laravel and Lumen Updated",
     "keywords": [
         "auth",
         "authentication",
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tymon\\JWTAuth\\": "src/"
+            "Sheikh0775\\JWTAuth\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tymon\\JWTAuth\\Test\\": "tests/"
+            "Sheikh0775\\JWTAuth\\Test\\": "tests/"
         }
     },
     "extra": {
@@ -47,20 +47,14 @@
         },
         "laravel": {
             "aliases": {
-                "JWTAuth": "Tymon\\JWTAuth\\Facades\\JWTAuth",
-                "JWTFactory": "Tymon\\JWTAuth\\Facades\\JWTFactory"
+                "JWTAuth": "Sheikh0775\\JWTAuth\\Facades\\JWTAuth",
+                "JWTFactory": "Sheikh0775\\JWTAuth\\Facades\\JWTFactory"
             },
             "providers": [
-                "Tymon\\JWTAuth\\Providers\\LaravelServiceProvider"
+                "Sheikh0775\\JWTAuth\\Providers\\LaravelServiceProvider"
             ]
         }
     },
-    "funding": [
-        {
-            "type": "patreon",
-            "url": "https://www.patreon.com/seantymon"
-        }
-    ],
     "config": {
         "sort-packages": true
     },
