@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test;
+namespace Sheikh0775\JWTAuth\Test;
 
-use Tymon\JWTAuth\Token;
+use Sheikh0775\JWTAuth\Token;
 
 class TokenTest extends AbstractTestCase
 {
     /**
-     * @var \Tymon\JWTAuth\Token
+     * @var \Sheikh0775\JWTAuth\Token
      */
     protected $token;
 

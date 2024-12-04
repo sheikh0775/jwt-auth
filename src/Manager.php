@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth;
+namespace Sheikh0775\JWTAuth;
 
-use Tymon\JWTAuth\Contracts\Providers\JWT as JWTContract;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
-use Tymon\JWTAuth\Support\CustomClaims;
-use Tymon\JWTAuth\Support\RefreshFlow;
+use Sheikh0775\JWTAuth\Contracts\Providers\JWT as JWTContract;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\Exceptions\TokenBlacklistedException;
+use Sheikh0775\JWTAuth\Support\CustomClaims;
+use Sheikh0775\JWTAuth\Support\RefreshFlow;
 
 class Manager
 {
@@ -24,21 +24,21 @@ class Manager
     /**
      * The provider.
      *
-     * @var \Tymon\JWTAuth\Contracts\Providers\JWT
+     * @var \Sheikh0775\JWTAuth\Contracts\Providers\JWT
      */
     protected $provider;
 
     /**
      * The blacklist.
      *
-     * @var \Tymon\JWTAuth\Blacklist
+     * @var \Sheikh0775\JWTAuth\Blacklist
      */
     protected $blacklist;
 
     /**
      * the payload factory.
      *
-     * @var \Tymon\JWTAuth\Factory
+     * @var \Sheikh0775\JWTAuth\Factory
      */
     protected $payloadFactory;
 
@@ -59,9 +59,9 @@ class Manager
     /**
      * Constructor.
      *
-     * @param  \Tymon\JWTAuth\Contracts\Providers\JWT  $provider
-     * @param  \Tymon\JWTAuth\Blacklist  $blacklist
-     * @param  \Tymon\JWTAuth\Factory  $payloadFactory
+     * @param  \Sheikh0775\JWTAuth\Contracts\Providers\JWT  $provider
+     * @param  \Sheikh0775\JWTAuth\Blacklist  $blacklist
+     * @param  \Sheikh0775\JWTAuth\Factory  $payloadFactory
      * @return void
      */
     public function __construct(JWTContract $provider, Blacklist $blacklist, Factory $payloadFactory)
@@ -74,8 +74,8 @@ class Manager
     /**
      * Encode a Payload and return the Token.
      *
-     * @param  \Tymon\JWTAuth\Payload  $payload
-     * @return \Tymon\JWTAuth\Token
+     * @param  \Sheikh0775\JWTAuth\Payload  $payload
+     * @return \Sheikh0775\JWTAuth\Token
      */
     public function encode(Payload $payload)
     {
@@ -87,11 +87,11 @@ class Manager
     /**
      * Decode a Token and return the Payload.
      *
-     * @param  \Tymon\JWTAuth\Token  $token
+     * @param  \Sheikh0775\JWTAuth\Token  $token
      * @param  bool  $checkBlacklist
-     * @return \Tymon\JWTAuth\Payload
+     * @return \Sheikh0775\JWTAuth\Payload
      *
-     * @throws \Tymon\JWTAuth\Exceptions\TokenBlacklistedException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\TokenBlacklistedException
      */
     public function decode(Token $token, $checkBlacklist = true)
     {
@@ -112,10 +112,10 @@ class Manager
     /**
      * Refresh a Token and return a new Token.
      *
-     * @param  \Tymon\JWTAuth\Token  $token
+     * @param  \Sheikh0775\JWTAuth\Token  $token
      * @param  bool  $forceForever
      * @param  bool  $resetClaims
-     * @return \Tymon\JWTAuth\Token
+     * @return \Sheikh0775\JWTAuth\Token
      */
     public function refresh(Token $token, $forceForever = false, $resetClaims = false)
     {
@@ -137,11 +137,11 @@ class Manager
     /**
      * Invalidate a Token by adding it to the blacklist.
      *
-     * @param  \Tymon\JWTAuth\Token  $token
+     * @param  \Sheikh0775\JWTAuth\Token  $token
      * @param  bool  $forceForever
      * @return bool
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     public function invalidate(Token $token, $forceForever = false)
     {
@@ -158,7 +158,7 @@ class Manager
     /**
      * Build the claims to go into the refreshed token.
      *
-     * @param  \Tymon\JWTAuth\Payload  $payload
+     * @param  \Sheikh0775\JWTAuth\Payload  $payload
      * @return array
      */
     protected function buildRefreshClaims(Payload $payload)
@@ -182,7 +182,7 @@ class Manager
     /**
      * Get the Payload Factory instance.
      *
-     * @return \Tymon\JWTAuth\Factory
+     * @return \Sheikh0775\JWTAuth\Factory
      */
     public function getPayloadFactory()
     {
@@ -192,7 +192,7 @@ class Manager
     /**
      * Get the JWTProvider instance.
      *
-     * @return \Tymon\JWTAuth\Contracts\Providers\JWT
+     * @return \Sheikh0775\JWTAuth\Contracts\Providers\JWT
      */
     public function getJWTProvider()
     {
@@ -202,7 +202,7 @@ class Manager
     /**
      * Get the Blacklist instance.
      *
-     * @return \Tymon\JWTAuth\Blacklist
+     * @return \Sheikh0775\JWTAuth\Blacklist
      */
     public function getBlacklist()
     {

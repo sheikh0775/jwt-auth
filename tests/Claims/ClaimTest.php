@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Claims;
+namespace Sheikh0775\JWTAuth\Test\Claims;
 
 use Illuminate\Contracts\Support\Arrayable;
-use Tymon\JWTAuth\Claims\Expiration;
-use Tymon\JWTAuth\Exceptions\InvalidClaimException;
-use Tymon\JWTAuth\Test\AbstractTestCase;
+use Sheikh0775\JWTAuth\Claims\Expiration;
+use Sheikh0775\JWTAuth\Exceptions\InvalidClaimException;
+use Sheikh0775\JWTAuth\Test\AbstractTestCase;
 
 class ClaimTest extends AbstractTestCase
 {
     /**
-     * @var \Tymon\JWTAuth\Claims\Expiration
+     * @var \Sheikh0775\JWTAuth\Claims\Expiration
      */
     protected $claim;
 

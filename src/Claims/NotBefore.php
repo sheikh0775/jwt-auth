@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Claims;
+namespace Sheikh0775\JWTAuth\Claims;
 
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
+use Sheikh0775\JWTAuth\Exceptions\TokenInvalidException;
 
 class NotBefore extends Claim
 {

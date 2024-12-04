@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Exceptions;
+namespace Sheikh0775\JWTAuth\Exceptions;
 
 class TokenInvalidException extends JWTException
 {

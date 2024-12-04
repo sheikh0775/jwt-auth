@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Claims;
+namespace Sheikh0775\JWTAuth\Claims;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Tymon\JWTAuth\Support\Utils;
+use Sheikh0775\JWTAuth\Support\Utils;
 
 class Factory
 {
@@ -69,7 +69,7 @@ class Factory
      *
      * @param  string  $name
      * @param  mixed  $value
-     * @return \Tymon\JWTAuth\Claims\Claim
+     * @return \Sheikh0775\JWTAuth\Claims\Claim
      */
     public function get($name, $value)
     {
@@ -99,7 +99,7 @@ class Factory
      * Generate the initial value and return the Claim instance.
      *
      * @param  string  $name
-     * @return \Tymon\JWTAuth\Claims\Claim
+     * @return \Sheikh0775\JWTAuth\Claims\Claim
      */
     public function make($name)
     {

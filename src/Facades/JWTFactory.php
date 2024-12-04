@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Facades;
+namespace Sheikh0775\JWTAuth\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

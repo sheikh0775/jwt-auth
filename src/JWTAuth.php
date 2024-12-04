@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth;
+namespace Sheikh0775\JWTAuth;
 
-use Tymon\JWTAuth\Contracts\Providers\Auth;
-use Tymon\JWTAuth\Http\Parser\Parser;
+use Sheikh0775\JWTAuth\Contracts\Providers\Auth;
+use Sheikh0775\JWTAuth\Http\Parser\Parser;
 
 /** @deprecated */
 class JWTAuth extends JWT
@@ -20,16 +20,16 @@ class JWTAuth extends JWT
     /**
      * The authentication provider.
      *
-     * @var \Tymon\JWTAuth\Contracts\Providers\Auth
+     * @var \Sheikh0775\JWTAuth\Contracts\Providers\Auth
      */
     protected $auth;
 
     /**
      * Constructor.
      *
-     * @param  \Tymon\JWTAuth\Manager  $manager
-     * @param  \Tymon\JWTAuth\Contracts\Providers\Auth  $auth
-     * @param  \Tymon\JWTAuth\Http\Parser\Parser  $parser
+     * @param  \Sheikh0775\JWTAuth\Manager  $manager
+     * @param  \Sheikh0775\JWTAuth\Contracts\Providers\Auth  $auth
+     * @param  \Sheikh0775\JWTAuth\Http\Parser\Parser  $parser
      * @return void
      */
     public function __construct(Manager $manager, Auth $auth, Parser $parser)
@@ -56,7 +56,7 @@ class JWTAuth extends JWT
     /**
      * Authenticate a user via a token.
      *
-     * @return \Tymon\JWTAuth\Contracts\JWTSubject|false
+     * @return \Sheikh0775\JWTAuth\Contracts\JWTSubject|false
      */
     public function authenticate()
     {
@@ -72,7 +72,7 @@ class JWTAuth extends JWT
     /**
      * Alias for authenticate().
      *
-     * @return \Tymon\JWTAuth\Contracts\JWTSubject|false
+     * @return \Sheikh0775\JWTAuth\Contracts\JWTSubject|false
      */
     public function toUser()
     {
@@ -82,7 +82,7 @@ class JWTAuth extends JWT
     /**
      * Get the authenticated user.
      *
-     * @return \Tymon\JWTAuth\Contracts\JWTSubject
+     * @return \Sheikh0775\JWTAuth\Contracts\JWTSubject
      */
     public function user()
     {

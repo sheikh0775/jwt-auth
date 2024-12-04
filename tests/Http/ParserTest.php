@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Http;
+namespace Sheikh0775\JWTAuth\Test\Http;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Crypt;
 use Mockery;
-use Tymon\JWTAuth\Contracts\Http\Parser as ParserContract;
-use Tymon\JWTAuth\Http\Parser\AuthHeaders;
-use Tymon\JWTAuth\Http\Parser\Cookies;
-use Tymon\JWTAuth\Http\Parser\InputSource;
-use Tymon\JWTAuth\Http\Parser\LumenRouteParams;
-use Tymon\JWTAuth\Http\Parser\Parser;
-use Tymon\JWTAuth\Http\Parser\QueryString;
-use Tymon\JWTAuth\Http\Parser\RouteParams;
-use Tymon\JWTAuth\Test\AbstractTestCase;
+use Sheikh0775\JWTAuth\Contracts\Http\Parser as ParserContract;
+use Sheikh0775\JWTAuth\Http\Parser\AuthHeaders;
+use Sheikh0775\JWTAuth\Http\Parser\Cookies;
+use Sheikh0775\JWTAuth\Http\Parser\InputSource;
+use Sheikh0775\JWTAuth\Http\Parser\LumenRouteParams;
+use Sheikh0775\JWTAuth\Http\Parser\Parser;
+use Sheikh0775\JWTAuth\Http\Parser\QueryString;
+use Sheikh0775\JWTAuth\Http\Parser\RouteParams;
+use Sheikh0775\JWTAuth\Test\AbstractTestCase;
 
 class ParserTest extends AbstractTestCase
 {

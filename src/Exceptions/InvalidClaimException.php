@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Exceptions;
+namespace Sheikh0775\JWTAuth\Exceptions;
 
 use Exception;
-use Tymon\JWTAuth\Claims\Claim;
+use Sheikh0775\JWTAuth\Claims\Claim;
 
 class InvalidClaimException extends JWTException
 {
     /**
      * Constructor.
      *
-     * @param  \Tymon\JWTAuth\Claims\Claim  $claim
+     * @param  \Sheikh0775\JWTAuth\Claims\Claim  $claim
      * @param  int  $code
      * @param  \Exception|null  $previous
      * @return void

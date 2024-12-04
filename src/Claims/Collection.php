@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Claims;
+namespace Sheikh0775\JWTAuth\Claims;
 
 use Illuminate\Support\Collection as IlluminateCollection;
 use Illuminate\Support\Str;
@@ -33,7 +33,7 @@ class Collection extends IlluminateCollection
      * @param  string  $name
      * @param  callable  $callback
      * @param  mixed  $default
-     * @return \Tymon\JWTAuth\Claims\Claim
+     * @return \Sheikh0775\JWTAuth\Claims\Claim
      */
     public function getByClaimName($name, callable $callback = null, $default = null)
     {

@@ -10,7 +10,7 @@ composer require tymon/jwt-auth
 
 ### Copy the config
 
-Copy the `config` file from `vendor/tymon/jwt-auth/config/config.php` to `config` folder of your Lumen application and rename it to `jwt.php`
+Copy the `config` file from `vendor/sheikh0775/jwt-auth/config/config.php` to `config` folder of your Lumen application and rename it to `jwt.php`
 
 Register your config by adding the following in the `bootstrap/app.php` before middleware declaration.
 
@@ -29,7 +29,7 @@ Add the following snippet to the `bootstrap/app.php` file under the providers se
 $app->register(App\Providers\AuthServiceProvider::class);
 
 // Add this line
-$app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
+$app->register(Sheikh0775\JWTAuth\Providers\LumenServiceProvider::class);
 ```
 
 Then uncomment the `auth` middleware in the same file:

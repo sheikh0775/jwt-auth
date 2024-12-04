@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Claims;
+namespace Sheikh0775\JWTAuth\Claims;
 
 use DateInterval;
 use DateTimeInterface;
-use Tymon\JWTAuth\Exceptions\InvalidClaimException;
-use Tymon\JWTAuth\Support\Utils;
+use Sheikh0775\JWTAuth\Exceptions\InvalidClaimException;
+use Sheikh0775\JWTAuth\Support\Utils;
 
 trait DatetimeTrait
 {
@@ -31,7 +31,7 @@ trait DatetimeTrait
      * @param  mixed  $value
      * @return $this
      *
-     * @throws \Tymon\JWTAuth\Exceptions\InvalidClaimException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\InvalidClaimException
      */
     public function setValue($value)
     {

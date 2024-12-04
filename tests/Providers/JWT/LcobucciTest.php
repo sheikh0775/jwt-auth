@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Providers\JWT;
+namespace Sheikh0775\JWTAuth\Test\Providers\JWT;
 
 use Illuminate\Support\Str;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-use Tymon\JWTAuth\Providers\JWT\Lcobucci;
-use Tymon\JWTAuth\Providers\JWT\Provider;
-use Tymon\JWTAuth\Test\AbstractTestCase;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\Exceptions\TokenInvalidException;
+use Sheikh0775\JWTAuth\Providers\JWT\Lcobucci;
+use Sheikh0775\JWTAuth\Providers\JWT\Provider;
+use Sheikh0775\JWTAuth\Test\AbstractTestCase;
 
 class LcobucciTest extends AbstractTestCase
 {

@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Validators;
+namespace Sheikh0775\JWTAuth\Validators;
 
-use Tymon\JWTAuth\Contracts\Validator as ValidatorContract;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\Support\RefreshFlow;
+use Sheikh0775\JWTAuth\Contracts\Validator as ValidatorContract;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\Support\RefreshFlow;
 
 abstract class Validator implements ValidatorContract
 {

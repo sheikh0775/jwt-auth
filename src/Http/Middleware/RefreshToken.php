@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Http\Middleware;
+namespace Sheikh0775\JWTAuth\Http\Middleware;
 
 use Closure;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
-use Tymon\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
 
 /** @deprecated */
 class RefreshToken extends BaseMiddleware

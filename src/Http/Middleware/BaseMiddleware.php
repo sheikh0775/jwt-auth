@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Http\Middleware;
+namespace Sheikh0775\JWTAuth\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\JWTAuth;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\JWTAuth;
 
 /** @deprecated */
 abstract class BaseMiddleware
@@ -22,14 +22,14 @@ abstract class BaseMiddleware
     /**
      * The JWT Authenticator.
      *
-     * @var \Tymon\JWTAuth\JWTAuth
+     * @var \Sheikh0775\JWTAuth\JWTAuth
      */
     protected $auth;
 
     /**
      * Create a new BaseMiddleware instance.
      *
-     * @param  \Tymon\JWTAuth\JWTAuth  $auth
+     * @param  \Sheikh0775\JWTAuth\JWTAuth  $auth
      * @return void
      */
     public function __construct(JWTAuth $auth)

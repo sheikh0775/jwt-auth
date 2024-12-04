@@ -9,35 +9,35 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test;
+namespace Sheikh0775\JWTAuth\Test;
 
 use Mockery;
-use Tymon\JWTAuth\Blacklist;
-use Tymon\JWTAuth\Claims\Collection;
-use Tymon\JWTAuth\Claims\Expiration;
-use Tymon\JWTAuth\Claims\IssuedAt;
-use Tymon\JWTAuth\Claims\Issuer;
-use Tymon\JWTAuth\Claims\JwtId;
-use Tymon\JWTAuth\Claims\NotBefore;
-use Tymon\JWTAuth\Claims\Subject;
-use Tymon\JWTAuth\Contracts\Providers\Storage;
-use Tymon\JWTAuth\Payload;
-use Tymon\JWTAuth\Validators\PayloadValidator;
+use Sheikh0775\JWTAuth\Blacklist;
+use Sheikh0775\JWTAuth\Claims\Collection;
+use Sheikh0775\JWTAuth\Claims\Expiration;
+use Sheikh0775\JWTAuth\Claims\IssuedAt;
+use Sheikh0775\JWTAuth\Claims\Issuer;
+use Sheikh0775\JWTAuth\Claims\JwtId;
+use Sheikh0775\JWTAuth\Claims\NotBefore;
+use Sheikh0775\JWTAuth\Claims\Subject;
+use Sheikh0775\JWTAuth\Contracts\Providers\Storage;
+use Sheikh0775\JWTAuth\Payload;
+use Sheikh0775\JWTAuth\Validators\PayloadValidator;
 
 class BlacklistTest extends AbstractTestCase
 {
     /**
-     * @var \Tymon\JWTAuth\Contracts\Providers\Storage|\Mockery\MockInterface
+     * @var \Sheikh0775\JWTAuth\Contracts\Providers\Storage|\Mockery\MockInterface
      */
     protected $storage;
 
     /**
-     * @var \Tymon\JWTAuth\Blacklist
+     * @var \Sheikh0775\JWTAuth\Blacklist
      */
     protected $blacklist;
 
     /**
-     * @var \Mockery\MockInterface|\Tymon\JWTAuth\Validators\Validator
+     * @var \Mockery\MockInterface|\Sheikh0775\JWTAuth\Validators\Validator
      */
     protected $validator;
 

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Contracts;
+namespace Sheikh0775\JWTAuth\Contracts;
 
 interface Claim
 {
@@ -19,7 +19,7 @@ interface Claim
      * @param  mixed  $value
      * @return $this
      *
-     * @throws \Tymon\JWTAuth\Exceptions\InvalidClaimException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\InvalidClaimException
      */
     public function setValue($value);
 

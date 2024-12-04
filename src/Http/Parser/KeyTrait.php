@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Http\Parser;
+namespace Sheikh0775\JWTAuth\Http\Parser;
 
 trait KeyTrait
 {

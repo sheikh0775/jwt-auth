@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Stubs;
+namespace Sheikh0775\JWTAuth\Test\Stubs;
 
 use Illuminate\Contracts\Auth\Authenticatable;
-use Tymon\JWTAuth\Contracts\JWTSubject;
+use Sheikh0775\JWTAuth\Contracts\JWTSubject;
 
 class LaravelUserStub extends UserStub implements Authenticatable, JWTSubject
 {

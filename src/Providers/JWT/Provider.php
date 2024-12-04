@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Providers\JWT;
+namespace Sheikh0775\JWTAuth\Providers\JWT;
 
 use Illuminate\Support\Arr;
 

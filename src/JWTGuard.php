@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth;
+namespace Sheikh0775\JWTAuth;
 
 use BadMethodCallException;
 use Illuminate\Auth\GuardHelpers;
@@ -17,9 +17,9 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Traits\Macroable;
-use Tymon\JWTAuth\Contracts\JWTSubject;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\Exceptions\UserNotDefinedException;
+use Sheikh0775\JWTAuth\Contracts\JWTSubject;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\Exceptions\UserNotDefinedException;
 
 class JWTGuard implements Guard
 {
@@ -37,7 +37,7 @@ class JWTGuard implements Guard
     /**
      * The JWT instance.
      *
-     * @var \Tymon\JWTAuth\JWT
+     * @var \Sheikh0775\JWTAuth\JWT
      */
     protected $jwt;
 
@@ -51,7 +51,7 @@ class JWTGuard implements Guard
     /**
      * Instantiate the class.
      *
-     * @param  \Tymon\JWTAuth\JWT  $jwt
+     * @param  \Sheikh0775\JWTAuth\JWT  $jwt
      * @param  \Illuminate\Contracts\Auth\UserProvider  $provider
      * @param  \Illuminate\Http\Request  $request
      * @return void
@@ -87,7 +87,7 @@ class JWTGuard implements Guard
      *
      * @return \Illuminate\Contracts\Auth\Authenticatable
      *
-     * @throws \Tymon\JWTAuth\Exceptions\UserNotDefinedException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\UserNotDefinedException
      */
     public function userOrFail()
     {
@@ -130,7 +130,7 @@ class JWTGuard implements Guard
     /**
      * Create a token for a user.
      *
-     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $user
+     * @param  \Sheikh0775\JWTAuth\Contracts\JWTSubject  $user
      * @return string
      */
     public function login(JWTSubject $user)
@@ -171,7 +171,7 @@ class JWTGuard implements Guard
      * Invalidate the token.
      *
      * @param  bool  $forceForever
-     * @return \Tymon\JWTAuth\JWT
+     * @return \Sheikh0775\JWTAuth\JWT
      */
     public function invalidate($forceForever = false)
     {
@@ -252,7 +252,7 @@ class JWTGuard implements Guard
     /**
      * Get the raw Payload instance.
      *
-     * @return \Tymon\JWTAuth\Payload
+     * @return \Sheikh0775\JWTAuth\Payload
      */
     public function getPayload()
     {
@@ -262,7 +262,7 @@ class JWTGuard implements Guard
     /**
      * Alias for getPayload().
      *
-     * @return \Tymon\JWTAuth\Payload
+     * @return \Sheikh0775\JWTAuth\Payload
      */
     public function payload()
     {
@@ -272,7 +272,7 @@ class JWTGuard implements Guard
     /**
      * Set the token.
      *
-     * @param  \Tymon\JWTAuth\Token|string  $token
+     * @param  \Sheikh0775\JWTAuth\Token|string  $token
      * @return $this
      */
     public function setToken($token)
@@ -354,7 +354,7 @@ class JWTGuard implements Guard
     /**
      * Get the token's auth factory.
      *
-     * @return \Tymon\JWTAuth\Factory
+     * @return \Sheikh0775\JWTAuth\Factory
      */
     public function factory()
     {
@@ -402,9 +402,9 @@ class JWTGuard implements Guard
     /**
      * Ensure that a token is available in the request.
      *
-     * @return \Tymon\JWTAuth\JWT
+     * @return \Sheikh0775\JWTAuth\JWT
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     protected function requireToken()
     {

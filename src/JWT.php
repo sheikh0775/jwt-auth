@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth;
+namespace Sheikh0775\JWTAuth;
 
 use BadMethodCallException;
 use Illuminate\Http\Request;
-use Tymon\JWTAuth\Contracts\JWTSubject;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\Http\Parser\Parser;
-use Tymon\JWTAuth\Support\CustomClaims;
+use Sheikh0775\JWTAuth\Contracts\JWTSubject;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\Http\Parser\Parser;
+use Sheikh0775\JWTAuth\Support\CustomClaims;
 
 class JWT
 {
@@ -25,21 +25,21 @@ class JWT
     /**
      * The authentication manager.
      *
-     * @var \Tymon\JWTAuth\Manager
+     * @var \Sheikh0775\JWTAuth\Manager
      */
     protected $manager;
 
     /**
      * The HTTP parser.
      *
-     * @var \Tymon\JWTAuth\Http\Parser\Parser
+     * @var \Sheikh0775\JWTAuth\Http\Parser\Parser
      */
     protected $parser;
 
     /**
      * The token.
      *
-     * @var \Tymon\JWTAuth\Token|null
+     * @var \Sheikh0775\JWTAuth\Token|null
      */
     protected $token;
 
@@ -53,8 +53,8 @@ class JWT
     /**
      * JWT constructor.
      *
-     * @param  \Tymon\JWTAuth\Manager  $manager
-     * @param  \Tymon\JWTAuth\Http\Parser\Parser  $parser
+     * @param  \Sheikh0775\JWTAuth\Manager  $manager
+     * @param  \Sheikh0775\JWTAuth\Http\Parser\Parser  $parser
      * @return void
      */
     public function __construct(Manager $manager, Parser $parser)
@@ -66,7 +66,7 @@ class JWT
     /**
      * Generate a token for a given subject.
      *
-     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $subject
+     * @param  \Sheikh0775\JWTAuth\Contracts\JWTSubject  $subject
      * @return string
      */
     public function fromSubject(JWTSubject $subject)
@@ -79,7 +79,7 @@ class JWT
     /**
      * Generate a token used as refresh token for a given subject.
      *
-     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $subject
+     * @param  \Sheikh0775\JWTAuth\Contracts\JWTSubject  $subject
      * @return string
      */
     public function fromSubjectForRefresh(JWTSubject $subject)
@@ -99,7 +99,7 @@ class JWT
     /**
      * Alias to generate a token for a given user.
      *
-     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $user
+     * @param  \Sheikh0775\JWTAuth\Contracts\JWTSubject  $user
      * @return string
      */
     public function fromUser(JWTSubject $user)
@@ -110,7 +110,7 @@ class JWT
     /**
      * Get the token to be used as Refresh token
      *
-     * @return \Tymon\JWTAuth\Contracts\JWTSubject
+     * @return \Sheikh0775\JWTAuth\Contracts\JWTSubject
      */
     public function getRefreshToken(JWTSubject $user)
     {
@@ -152,9 +152,9 @@ class JWT
      * Alias to get the payload, and as a result checks that
      * the token is valid i.e. not expired or blacklisted.
      *
-     * @return \Tymon\JWTAuth\Payload
+     * @return \Sheikh0775\JWTAuth\Payload
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     public function checkOrFail()
     {
@@ -165,7 +165,7 @@ class JWT
      * Check that the token is valid.
      *
      * @param  bool  $getPayload
-     * @return \Tymon\JWTAuth\Payload|bool
+     * @return \Sheikh0775\JWTAuth\Payload|bool
      */
     public function check($getPayload = false)
     {
@@ -181,7 +181,7 @@ class JWT
     /**
      * Get the token.
      *
-     * @return \Tymon\JWTAuth\Token|null
+     * @return \Sheikh0775\JWTAuth\Token|null
      */
     public function getToken()
     {
@@ -201,7 +201,7 @@ class JWT
      *
      * @return $this
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     public function parseToken()
     {
@@ -215,7 +215,7 @@ class JWT
     /**
      * Get the raw Payload instance.
      *
-     * @return \Tymon\JWTAuth\Payload
+     * @return \Sheikh0775\JWTAuth\Payload
      */
     public function getPayload()
     {
@@ -227,7 +227,7 @@ class JWT
     /**
      * Alias for getPayload().
      *
-     * @return \Tymon\JWTAuth\Payload
+     * @return \Sheikh0775\JWTAuth\Payload
      */
     public function payload()
     {
@@ -248,8 +248,8 @@ class JWT
     /**
      * Create a Payload instance.
      *
-     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $subject
-     * @return \Tymon\JWTAuth\Payload
+     * @param  \Sheikh0775\JWTAuth\Contracts\JWTSubject  $subject
+     * @return \Sheikh0775\JWTAuth\Payload
      */
     public function makePayload(JWTSubject $subject)
     {
@@ -259,7 +259,7 @@ class JWT
     /**
      * Build the claims array and return it.
      *
-     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $subject
+     * @param  \Sheikh0775\JWTAuth\Contracts\JWTSubject  $subject
      * @return array
      */
     protected function getClaimsArray(JWTSubject $subject)
@@ -274,7 +274,7 @@ class JWT
     /**
      * Get the claims associated with a given subject.
      *
-     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $subject
+     * @param  \Sheikh0775\JWTAuth\Contracts\JWTSubject  $subject
      * @return array
      */
     protected function getClaimsForSubject(JWTSubject $subject)
@@ -313,7 +313,7 @@ class JWT
     /**
      * Set the token.
      *
-     * @param  \Tymon\JWTAuth\Token|string  $token
+     * @param  \Sheikh0775\JWTAuth\Token|string  $token
      * @return $this
      */
     public function setToken($token)
@@ -340,7 +340,7 @@ class JWT
      *
      * @return void
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     protected function requireToken()
     {
@@ -378,7 +378,7 @@ class JWT
     /**
      * Get the Manager instance.
      *
-     * @return \Tymon\JWTAuth\Manager
+     * @return \Sheikh0775\JWTAuth\Manager
      */
     public function manager()
     {
@@ -388,7 +388,7 @@ class JWT
     /**
      * Get the Parser instance.
      *
-     * @return \Tymon\JWTAuth\Http\Parser\Parser
+     * @return \Sheikh0775\JWTAuth\Http\Parser\Parser
      */
     public function parser()
     {
@@ -398,7 +398,7 @@ class JWT
     /**
      * Get the Payload Factory.
      *
-     * @return \Tymon\JWTAuth\Factory
+     * @return \Sheikh0775\JWTAuth\Factory
      */
     public function factory()
     {
@@ -408,7 +408,7 @@ class JWT
     /**
      * Get the Blacklist.
      *
-     * @return \Tymon\JWTAuth\Blacklist
+     * @return \Sheikh0775\JWTAuth\Blacklist
      */
     public function blacklist()
     {

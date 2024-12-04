@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Claims;
+namespace Sheikh0775\JWTAuth\Claims;
 
-use Tymon\JWTAuth\Exceptions\InvalidClaimException;
-use Tymon\JWTAuth\Exceptions\TokenExpiredException;
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
+use Sheikh0775\JWTAuth\Exceptions\InvalidClaimException;
+use Sheikh0775\JWTAuth\Exceptions\TokenExpiredException;
+use Sheikh0775\JWTAuth\Exceptions\TokenInvalidException;
 
 class IssuedAt extends Claim
 {

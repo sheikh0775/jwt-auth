@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Providers\JWT;
+namespace Sheikh0775\JWTAuth\Providers\JWT;
 
 use DateTimeImmutable;
 use DateTimeInterface;
@@ -24,9 +24,9 @@ use Lcobucci\JWT\Signer\Rsa;
 use Lcobucci\JWT\Token\Builder;
 use Lcobucci\JWT\Token\RegisteredClaims;
 use Lcobucci\JWT\Validation\Constraint\SignedWith;
-use Tymon\JWTAuth\Contracts\Providers\JWT;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
+use Sheikh0775\JWTAuth\Contracts\Providers\JWT;
+use Sheikh0775\JWTAuth\Exceptions\JWTException;
+use Sheikh0775\JWTAuth\Exceptions\TokenInvalidException;
 
 class Lcobucci extends Provider implements JWT
 {
@@ -80,7 +80,7 @@ class Lcobucci extends Provider implements JWT
      * @param  array  $payload
      * @return string
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     public function encode(array $payload)
     {
@@ -101,7 +101,7 @@ class Lcobucci extends Provider implements JWT
      * @param  string  $token
      * @return array
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     public function decode($token)
     {
@@ -197,7 +197,7 @@ class Lcobucci extends Provider implements JWT
      *
      * @return \Lcobucci\JWT\Signer
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     protected function getSigner()
     {
@@ -228,7 +228,7 @@ class Lcobucci extends Provider implements JWT
      *
      * @return \Lcobucci\JWT\Signer\Key
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     protected function getSigningKey()
     {
@@ -252,7 +252,7 @@ class Lcobucci extends Provider implements JWT
      *
      * @return \Lcobucci\JWT\Signer\Key
      *
-     * @throws \Tymon\JWTAuth\Exceptions\JWTException
+     * @throws \Sheikh0775\JWTAuth\Exceptions\JWTException
      */
     protected function getVerificationKey()
     {

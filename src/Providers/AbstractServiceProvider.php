@@ -9,32 +9,32 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Providers;
+namespace Sheikh0775\JWTAuth\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Namshi\JOSE\JWS;
-use Tymon\JWTAuth\Blacklist;
-use Tymon\JWTAuth\Claims\Factory as ClaimFactory;
-use Tymon\JWTAuth\Console\JWTGenerateSecretCommand;
-use Tymon\JWTAuth\Contracts\Providers\Auth;
-use Tymon\JWTAuth\Contracts\Providers\JWT as JWTContract;
-use Tymon\JWTAuth\Contracts\Providers\Storage;
-use Tymon\JWTAuth\Factory;
-use Tymon\JWTAuth\Http\Middleware\Authenticate;
-use Tymon\JWTAuth\Http\Middleware\AuthenticateAndRenew;
-use Tymon\JWTAuth\Http\Middleware\Check;
-use Tymon\JWTAuth\Http\Middleware\RefreshToken;
-use Tymon\JWTAuth\Http\Parser\AuthHeaders;
-use Tymon\JWTAuth\Http\Parser\InputSource;
-use Tymon\JWTAuth\Http\Parser\Parser;
-use Tymon\JWTAuth\Http\Parser\QueryString;
-use Tymon\JWTAuth\JWT;
-use Tymon\JWTAuth\JWTAuth;
-use Tymon\JWTAuth\JWTGuard;
-use Tymon\JWTAuth\Manager;
-use Tymon\JWTAuth\Providers\JWT\Lcobucci;
-use Tymon\JWTAuth\Providers\JWT\Namshi;
-use Tymon\JWTAuth\Validators\PayloadValidator;
+use Sheikh0775\JWTAuth\Blacklist;
+use Sheikh0775\JWTAuth\Claims\Factory as ClaimFactory;
+use Sheikh0775\JWTAuth\Console\JWTGenerateSecretCommand;
+use Sheikh0775\JWTAuth\Contracts\Providers\Auth;
+use Sheikh0775\JWTAuth\Contracts\Providers\JWT as JWTContract;
+use Sheikh0775\JWTAuth\Contracts\Providers\Storage;
+use Sheikh0775\JWTAuth\Factory;
+use Sheikh0775\JWTAuth\Http\Middleware\Authenticate;
+use Sheikh0775\JWTAuth\Http\Middleware\AuthenticateAndRenew;
+use Sheikh0775\JWTAuth\Http\Middleware\Check;
+use Sheikh0775\JWTAuth\Http\Middleware\RefreshToken;
+use Sheikh0775\JWTAuth\Http\Parser\AuthHeaders;
+use Sheikh0775\JWTAuth\Http\Parser\InputSource;
+use Sheikh0775\JWTAuth\Http\Parser\Parser;
+use Sheikh0775\JWTAuth\Http\Parser\QueryString;
+use Sheikh0775\JWTAuth\JWT;
+use Sheikh0775\JWTAuth\JWTAuth;
+use Sheikh0775\JWTAuth\JWTGuard;
+use Sheikh0775\JWTAuth\Manager;
+use Sheikh0775\JWTAuth\Providers\JWT\Lcobucci;
+use Sheikh0775\JWTAuth\Providers\JWT\Namshi;
+use Sheikh0775\JWTAuth\Validators\PayloadValidator;
 
 abstract class AbstractServiceProvider extends ServiceProvider
 {

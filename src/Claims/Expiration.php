@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Claims;
+namespace Sheikh0775\JWTAuth\Claims;
 
-use Tymon\JWTAuth\Exceptions\TokenExpiredException;
+use Sheikh0775\JWTAuth\Exceptions\TokenExpiredException;
 
 class Expiration extends Claim
 {

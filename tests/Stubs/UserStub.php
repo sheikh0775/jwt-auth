@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Stubs;
+namespace Sheikh0775\JWTAuth\Test\Stubs;
 
-use Tymon\JWTAuth\Contracts\JWTSubject;
+use Sheikh0775\JWTAuth\Contracts\JWTSubject;
 
 class UserStub implements JWTSubject
 {

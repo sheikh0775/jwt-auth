@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Claims;
+namespace Sheikh0775\JWTAuth\Test\Claims;
 
-use Tymon\JWTAuth\Claims\IssuedAt;
-use Tymon\JWTAuth\Exceptions\InvalidClaimException;
-use Tymon\JWTAuth\Test\AbstractTestCase;
+use Sheikh0775\JWTAuth\Claims\IssuedAt;
+use Sheikh0775\JWTAuth\Exceptions\InvalidClaimException;
+use Sheikh0775\JWTAuth\Test\AbstractTestCase;
 
 class IssuedAtTest extends AbstractTestCase
 {

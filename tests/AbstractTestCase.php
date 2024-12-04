@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test;
+namespace Sheikh0775\JWTAuth\Test;
 
 use Carbon\Carbon;
 use Mockery;

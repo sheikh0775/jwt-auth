@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Providers\Storage;
+namespace Sheikh0775\JWTAuth\Test\Providers\Storage;
 
 use Illuminate\Contracts\Cache\Repository;
 use Mockery;
-use Tymon\JWTAuth\Providers\Storage\Illuminate as Storage;
-use Tymon\JWTAuth\Test\AbstractTestCase;
-use Tymon\JWTAuth\Test\Stubs\TaggedStorage;
+use Sheikh0775\JWTAuth\Providers\Storage\Illuminate as Storage;
+use Sheikh0775\JWTAuth\Test\AbstractTestCase;
+use Sheikh0775\JWTAuth\Test\Stubs\TaggedStorage;
 
 class IlluminateTest extends AbstractTestCase
 {
@@ -25,7 +25,7 @@ class IlluminateTest extends AbstractTestCase
     protected $cache;
 
     /**
-     * @var \Tymon\JWTAuth\Providers\Storage\Illuminate
+     * @var \Sheikh0775\JWTAuth\Providers\Storage\Illuminate
      */
     protected $storage;
 

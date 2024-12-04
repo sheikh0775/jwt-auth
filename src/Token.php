@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth;
+namespace Sheikh0775\JWTAuth;
 
-use Tymon\JWTAuth\Validators\TokenValidator;
+use Sheikh0775\JWTAuth\Validators\TokenValidator;
 
 class Token
 {

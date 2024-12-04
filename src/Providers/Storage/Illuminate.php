@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Providers\Storage;
+namespace Sheikh0775\JWTAuth\Providers\Storage;
 
 use BadMethodCallException;
 use Illuminate\Contracts\Cache\Repository as CacheContract;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
-use Tymon\JWTAuth\Contracts\Providers\Storage;
+use Sheikh0775\JWTAuth\Contracts\Providers\Storage;
 
 class Illuminate implements Storage
 {

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Fixtures;
+namespace Sheikh0775\JWTAuth\Test\Fixtures;
 
-use Tymon\JWTAuth\Claims\Claim;
+use Sheikh0775\JWTAuth\Claims\Claim;
 
 class Foo extends Claim
 {

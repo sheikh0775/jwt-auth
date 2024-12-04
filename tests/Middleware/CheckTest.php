@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Tymon\JWTAuth\Test\Middleware;
+namespace Sheikh0775\JWTAuth\Test\Middleware;
 
 use Mockery;
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-use Tymon\JWTAuth\Http\Middleware\Check;
-use Tymon\JWTAuth\Http\Parser\Parser;
-use Tymon\JWTAuth\Test\Stubs\UserStub;
+use Sheikh0775\JWTAuth\Exceptions\TokenInvalidException;
+use Sheikh0775\JWTAuth\Http\Middleware\Check;
+use Sheikh0775\JWTAuth\Http\Parser\Parser;
+use Sheikh0775\JWTAuth\Test\Stubs\UserStub;
 
 class CheckTest extends AbstractMiddlewareTest
 {
     /**
-     * @var \Tymon\JWTAuth\Http\Middleware\Check
+     * @var \Sheikh0775\JWTAuth\Http\Middleware\Check
      */
     protected $middleware;
 
