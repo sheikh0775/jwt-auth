@@ -77,6 +77,26 @@ class JWT
     }
 
     /**
+     * Generate a token used as refresh token for a given subject.
+     *
+     * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $subject
+     * @return string
+     */
+    public function fromSubjectForRefresh(JWTSubject $subject)
+    {
+        $payload = $this->makePayload($subject);
+        $payloadArray = $payload->toArray();
+        foreach($payloadArray as $key=>$value) {
+            if($key=='exp'){
+                $new_time =  strtotime('+30 day', $value); // Adding Refresh token Expiry date to 30days
+                $payloadArray[$key] = $new_time;
+            }
+        }
+        $payload = $this->factory()->customClaims($payloadArray)->make();
+        return $this->manager->encode($payload)->get();
+    }
+
+    /**
      * Alias to generate a token for a given user.
      *
      * @param  \Tymon\JWTAuth\Contracts\JWTSubject  $user
@@ -85,6 +105,16 @@ class JWT
     public function fromUser(JWTSubject $user)
     {
         return $this->fromSubject($user);
+    }
+
+    /**
+     * Get the token to be used as Refresh token
+     *
+     * @return \Tymon\JWTAuth\Contracts\JWTSubject
+     */
+    public function getRefreshToken(JWTSubject $user)
+    {
+        return $this->fromSubjectForRefresh($user);
     }
 
     /**
